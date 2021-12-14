@@ -5,9 +5,18 @@
 //     Завдання можеш оформити
 // у Github та прислати нам посиланням на репозіторій або розшарити нам його за допомогою гуглдоку
 
-document.getElementById('clck').onclick=()=>{
-    let num1 = document.forms.f1.ap1.value;
-    let num2 = document.forms.f1.ap2.value;
-    console.log(num1,num2)
-
-}
+function calc(){
+        let num1 = parseFloat(document.forms.f1.ap1.value);
+        let num2 = parseFloat(document.forms.f1.ap2.value);
+        let sel = document.getElementById('sel').value;
+        if (sel === '+') {
+            document.getElementById('result').value = num1 + num2;
+        }else if (sel === '-') {
+            document.getElementById('result').value = num1 - num2;
+        }else if(sel === '/') {
+            document.getElementById('result').value = num1 / num2;
+        }else if(sel === 'x') {
+            document.getElementById('result').value = num1 * num2;
+        }
+    return calc;
+    };
