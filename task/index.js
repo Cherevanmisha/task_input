@@ -7,16 +7,16 @@
 
 function calc(){
         let num1 = parseFloat(document.forms.f1.ap1.value);
-        let num2 = parseFloat(document.forms.f1.ap2.value);
+        let num2 =parseFloat(document.forms.f1.ap2.value);
         let sel = document.getElementById('sel').value;
         if (sel === '+') {
-            document.getElementById('result').value = num1 + num2;
+            document.getElementById('result').value = Math.round(num1 + num2);
         }else if (sel === '-') {
-            document.getElementById('result').value = num1 - num2;
+            document.getElementById('result').value = Math.round(num1 - num2);
         }else if(sel === '/') {
-            document.getElementById('result').value = num1 / num2;
+            document.getElementById('result').value = Math.round(num1 / num2);
         }else if(sel === 'x') {
-            document.getElementById('result').value = num1 * num2;
+            document.getElementById('result').value = Math.round(num1 * num2);
         }
-    return calc;
+
     };
