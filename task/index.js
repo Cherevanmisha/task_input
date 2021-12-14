@@ -6,7 +6,6 @@
 // у Github та прислати нам посиланням на репозіторій або розшарити нам його за допомогою гуглдоку
 
 document.getElementById('clck').onclick=()=>{
-
     let num1 = document.forms.f1.ap1.value;
     let num2 = document.forms.f1.ap2.value;
     console.log(num1,num2)
